@@ -7,7 +7,12 @@
 }
 
 body {
-  background-color: #231E1E;
+  background-image: url('../source/assets/pbl-bg4.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
   /* The following three properties are used to make sure your content is vertically centered */
   display: flex;
   flex-direction: column;
