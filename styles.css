@@ -1,0 +1,64 @@
+::webkit-scrollbar {
+  display: none;
+}
+
+* {
+  color: aliceblue;
+}
+
+body {
+  background-color: #000000;
+  /* The following three properties are used to make sure your content is vertically centered */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Ensure the body takes up the full viewport height */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Abel', sans-serif;
+}
+
+h3 {
+  text-decoration: underline;
+}
+.logo-main {
+  width: 50%;
+  display: block;
+  margin: 0 auto 2em;
+  padding: 0 5%; /* apply padding to all screen sizes */
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25%;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.container div img {
+  margin-right: 10px; /* adjust as needed */
+  transition: opacity 0.3s ease;
+}
+.container div a:hover img {
+  opacity: 0.7;
+}
+.container div a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo-main {
+    width: 90%; /* resize logo for small screens */
+  }
+}
